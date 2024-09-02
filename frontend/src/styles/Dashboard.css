@@ -1,0 +1,105 @@
+/* Dashboard.css */
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e6f2ff, #f0e6ff);
+  padding: 3rem 1rem;
+}
+
+.dashboard-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.dashboard-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.dashboard-button-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.dashboard-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-button.primary {
+  background-color: #3182ce;
+  color: white;
+}
+
+.dashboard-button.primary:hover {
+  background-color: #2c5282;
+}
+
+.dashboard-button.secondary {
+  background-color: #edf2f7;
+  color: #4a5568;
+}
+
+.dashboard-button.secondary:hover {
+  background-color: #e2e8f0;
+}
+
+.button-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.icon-plus::before {
+  content: '\002B'; /* Unicode for plus sign */
+}
+
+.icon-history::before {
+  content: '\1F5D8'; /* Unicode for clockwise right and left semicircle arrows */
+}
+
+.button-text {
+  font-weight: 600;
+}
